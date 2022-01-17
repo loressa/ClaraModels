@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "type": "segmentation",
+  "labels": [
+    "ovseg_zxy_v1"
+  ],
+  "description": "Custom Inference for tissue segmentation",
+  "pre_transforms": [
+  {
+      "name": "monai.transforms.LoadImaged",
+      "args": {
+        "keys": "image"
+      }
+    }
+  ],
+  "inference": {
+    "name": "ovseg_zxy.inference.CustomInference.CustomInference",
+    "input": "image",
+    "output": "pred",
+    "args": {
+      "is_batched_data": false
+    }
+  },
+"post_transforms": [
+    {
+      "name": "monai.transforms.ToNumpyd",
+      "args": {
+        "keys": "pred"
+      }
+    }
+  ],
+  "writer": {
+    "name": "aiaa.transforms.Writer",
+    "args": {
+      "image": "pred",
+      "json": "result"
+    }
+  }
+}
