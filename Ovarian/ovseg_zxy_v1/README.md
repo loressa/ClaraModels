@@ -1,0 +1,1 @@
+First version of Thomas' model for ovarian cancer segmentation, swapping z index (zxy), as of June 2021. 
