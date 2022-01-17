@@ -1,0 +1,377 @@
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/.DS_Store
+Binary files aiaa_workspace/aiaa-1/lib/ovseg_zxy/.DS_Store and models/ovseg_zxy/.DS_Store differ
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/__init__.py
+diff: models/ovseg_zxy/__init__.py: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/prediction/__init__.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/prediction/SlidingWindowPrediction.py
+5c5
+< from ovseg_zxy.utils.torch_np_utils import check_type
+---
+> from ovseg.utils.torch_np_utils import check_type
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/prediction/__pycache__/SlidingWindowPrediction.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/prediction/__pycache__/SlidingWindowPrediction.cpython-36.pyc
+diff: models/ovseg_zxy/prediction/__pycache__/SlidingWindowPrediction.cpython-36.pyc: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/prediction/__pycache__/__init__.cpython-36.pyc
+diff: models/ovseg_zxy/prediction/__pycache__/__init__.cpython-36.pyc: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/prediction/__pycache__/__init__.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/label_utils.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/interp_utils.py
+9,10c9,10
+< from ovseg_zxy.utils.grid_utils import get_resize_np_grid, get_resize_torch_grid
+< from ovseg_zxy.utils.torch_np_utils import stack, check_type
+---
+> from ovseg.utils.grid_utils import get_resize_np_grid, get_resize_torch_grid
+> from ovseg.utils.torch_np_utils import stack, check_type
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/io.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/__init__.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/torch_np_utils.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/eval_predictions.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/dict_equal.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/grid_utils.py
+3c3
+< from ovseg_zxy.utils.torch_np_utils import stack, check_type
+---
+> from ovseg.utils.torch_np_utils import stack, check_type
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/path_utils.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/__pycache__/torch_np_utils.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/__pycache__/torch_np_utils.cpython-36.pyc
+diff: models/ovseg_zxy/utils/__pycache__/torch_np_utils.cpython-36.pyc: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/__pycache__/path_utils.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/__pycache__/dict_equal.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/__pycache__/dict_equal.cpython-36.pyc
+diff: models/ovseg_zxy/utils/__pycache__/dict_equal.cpython-36.pyc: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/__pycache__/path_utils.cpython-36.pyc
+diff: models/ovseg_zxy/utils/__pycache__/path_utils.cpython-36.pyc: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/__pycache__/grid_utils.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/__pycache__/grid_utils.cpython-36.pyc
+diff: models/ovseg_zxy/utils/__pycache__/grid_utils.cpython-36.pyc: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/__pycache__/io.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/__pycache__/label_utils.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/__pycache__/label_utils.cpython-36.pyc
+diff: models/ovseg_zxy/utils/__pycache__/label_utils.cpython-36.pyc: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/__pycache__/io.cpython-36.pyc
+diff: models/ovseg_zxy/utils/__pycache__/io.cpython-36.pyc: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/__pycache__/__init__.cpython-36.pyc
+diff: models/ovseg_zxy/utils/__pycache__/__init__.cpython-36.pyc: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/__pycache__/__init__.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/__pycache__/interp_utils.cpython-36.pyc
+diff: models/ovseg_zxy/utils/__pycache__/interp_utils.cpython-36.pyc: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/utils/__pycache__/interp_utils.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/__pycache__/__init__.cpython-36.pyc
+diff: models/ovseg_zxy/__pycache__/__init__.cpython-36.pyc: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/__pycache__/__init__.cpython-37.pyc
+diff: models/ovseg_zxy/__pycache__/__init__.cpython-37.pyc: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/networks/nfUNet.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/networks/recon_networks.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/networks/UNet.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/networks/__init__.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/networks/blocks.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/networks/iUNet.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/networks/network_weights/v1/network_weights
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/networks/__pycache__/blocks.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/networks/__pycache__/nfUNet.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/networks/__pycache__/iUNet.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/networks/__pycache__/UNet.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/networks/__pycache__/UNet.cpython-36.pyc
+diff: models/ovseg_zxy/networks/__pycache__/UNet.cpython-36.pyc: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/networks/__pycache__/__init__.cpython-36.pyc
+diff: models/ovseg_zxy/networks/__pycache__/__init__.cpython-36.pyc: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/networks/__pycache__/__init__.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/postprocessing/SegmentationPostprocessing.py
+3,4c3,4
+< from ovseg_zxy.utils.interp_utils import resize_sample
+< from ovseg_zxy.utils.torch_np_utils import check_type
+---
+> from ovseg.utils.interp_utils import resize_sample
+> from ovseg.utils.torch_np_utils import check_type
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/postprocessing/__init__.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/postprocessing/SegmentationPostprocessing.py_local
+diff: models/ovseg_zxy/postprocessing/SegmentationPostprocessing.py_local: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/postprocessing/__pycache__/SegmentationPostprocessing.cpython-36.pyc
+diff: models/ovseg_zxy/postprocessing/__pycache__/SegmentationPostprocessing.cpython-36.pyc: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/postprocessing/__pycache__/SegmentationPostprocessing.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/postprocessing/__pycache__/__init__.cpython-36.pyc
+diff: models/ovseg_zxy/postprocessing/__pycache__/__init__.cpython-36.pyc: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/postprocessing/__pycache__/__init__.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/model/model_parameters_segmentation.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/model/model_parameters_reconstruction.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/model/ModelBase.py
+2,4c2,4
+< from ovseg_zxy.utils import io, path_utils
+< from ovseg_zxy.utils.dict_equal import dict_equal
+< from ovseg_zxy.data.Dataset import raw_Dataset
+---
+> from ovseg.utils import io, path_utils
+> from ovseg.utils.dict_equal import dict_equal
+> from ovseg.data.Dataset import raw_Dataset
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/model/SegmentationEnsemble.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/model/__init__.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/model/SegmentationModel.py
+3c3
+< from ovseg_zxy.preprocessing.SegmentationPreprocessing import \
+---
+> from ovseg.preprocessing.SegmentationPreprocessing import \
+5c5
+< from ovseg_zxy.augmentation.SegmentationAugmentation import \
+---
+> from ovseg.augmentation.SegmentationAugmentation import \
+7,15c7,15
+< from ovseg_zxy.data.SegmentationData import SegmentationData
+< from ovseg_zxy.prediction.SlidingWindowPrediction import SlidingWindowPrediction
+< from ovseg_zxy.networks.UNet import UNet
+< from ovseg_zxy.networks.nfUNet import nfUNet
+< from ovseg_zxy.networks.iUNet import iUNet
+< from ovseg_zxy.training.SegmentationTraining import SegmentationTraining
+< from ovseg_zxy.model.ModelBase import ModelBase
+< from ovseg_zxy.utils.torch_np_utils import check_type
+< from ovseg_zxy.postprocessing.SegmentationPostprocessing import \
+---
+> from ovseg.data.SegmentationData import SegmentationData
+> from ovseg.prediction.SlidingWindowPrediction import SlidingWindowPrediction
+> from ovseg.networks.UNet import UNet
+> from ovseg.networks.nfUNet import nfUNet
+> from ovseg.networks.iUNet import iUNet
+> from ovseg.training.SegmentationTraining import SegmentationTraining
+> from ovseg.model.ModelBase import ModelBase
+> from ovseg.utils.torch_np_utils import check_type
+> from ovseg.postprocessing.SegmentationPostprocessing import \
+17c17
+< from ovseg_zxy.utils.io import save_nii_from_data_tpl, load_pkl, read_nii
+---
+> from ovseg.utils.io import save_nii_from_data_tpl, load_pkl, read_nii
+272c272
+<         #traced_script_module.save("/Users/les44/Documents/NVIDIA/Thomas/ovseg_zxy_zxy/ovseg_zxy_zxy_model.ts")
+---
+>         #traced_script_module.save("/Users/les44/Documents/NVIDIA/Thomas/ovseg_zxy/ovseg_zxy_model.ts")
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/model/Reconstruction2dSimModel.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/model/model_parameters_imageprocessing.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/model/load.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/model/ImageProcessingModel.py
+4c4
+< from ovseg_zxy.utils.io import save_nii
+---
+> from ovseg.utils.io import save_nii
+6c6
+< from ovseg_zxy.training.ImageProcessingTraining import \
+---
+> from ovseg.training.ImageProcessingTraining import \
+8,11c8,11
+< from ovseg_zxy.data.ImageProcessingData import ImageProcessingData
+< from ovseg_zxy.model.ModelBase import ModelBase
+< from ovseg_zxy.utils.torch_np_utils import check_type
+< from ovseg_zxy.preprocessing.ImageProcessingPreprocessing import \
+---
+> from ovseg.data.ImageProcessingData import ImageProcessingData
+> from ovseg.model.ModelBase import ModelBase
+> from ovseg.utils.torch_np_utils import check_type
+> from ovseg.preprocessing.ImageProcessingPreprocessing import \
+13c13
+< from ovseg_zxy.networks.UNet import UNet
+---
+> from ovseg.networks.UNet import UNet
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/model/__pycache__/ModelBase.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/model/__pycache__/SegmentationModel.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/model/__pycache__/__init__.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/parameters/model_parameters_preprocessing.npy
+diff: models/ovseg_zxy/parameters/model_parameters_preprocessing.npy: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/parameters/model_parameters.pkl
+diff: models/ovseg_zxy/parameters/model_parameters.pkl: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/parameters/model_parameters_prediction.npy
+diff: models/ovseg_zxy/parameters/model_parameters_prediction.npy: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/parameters/model_parameters.npy
+diff: models/ovseg_zxy/parameters/model_parameters.npy: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/parameters/model_parameters_network.npy
+diff: models/ovseg_zxy/parameters/model_parameters_network.npy: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/parameters/model_parameters_data.npy
+diff: models/ovseg_zxy/parameters/model_parameters_data.npy: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/inference/DummyInference.py
+diff: models/ovseg_zxy/inference/DummyInference.py: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/inference/__pycache__/DummyInference.cpython-36.pyc
+diff: models/ovseg_zxy/inference/__pycache__/DummyInference.cpython-36.pyc: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/preprocessing/SegmentationPreprocessing.py
+4c4
+< from ovseg_zxy.utils.label_utils import remove_small_connected_components_from_batch, reduce_classes, \
+---
+> from ovseg.utils.label_utils import remove_small_connected_components_from_batch, reduce_classes, \
+6,9c6,9
+< from ovseg_zxy.utils.dict_equal import dict_equal
+< from ovseg_zxy.utils.io import read_data_tpl_from_nii, load_pkl, save_pkl, save_txt
+< from ovseg_zxy.utils.path_utils import my_listdir, maybe_create_path
+< from ovseg_zxy.data.Dataset import raw_Dataset
+---
+> from ovseg.utils.dict_equal import dict_equal
+> from ovseg.utils.io import read_data_tpl_from_nii, load_pkl, save_pkl, save_txt
+> from ovseg.utils.path_utils import my_listdir, maybe_create_path
+> from ovseg.data.Dataset import raw_Dataset
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/preprocessing/__init__.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/preprocessing/Reconstruction2dSimPreprocessing.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/preprocessing/ImageProcessingPreprocessing.py
+3,4c3,4
+< from ovseg_zxy.utils.torch_np_utils import check_type, stack
+< from ovseg_zxy.utils.path_utils import maybe_create_path
+---
+> from ovseg.utils.torch_np_utils import check_type, stack
+> from ovseg.utils.path_utils import maybe_create_path
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/preprocessing/__pycache__/SegmentationPreprocessing.cpython-36.pyc
+diff: models/ovseg_zxy/preprocessing/__pycache__/SegmentationPreprocessing.cpython-36.pyc: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/preprocessing/__pycache__/SegmentationPreprocessing.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/preprocessing/__pycache__/__init__.cpython-36.pyc
+diff: models/ovseg_zxy/preprocessing/__pycache__/__init__.cpython-36.pyc: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/preprocessing/__pycache__/__init__.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/data/DataBase.py
+3c3
+< from ovseg_zxy.utils import io
+---
+> from ovseg.utils import io
+6,7c6,7
+< from ovseg_zxy.data.utils import split_scans_random_uniform, split_scans_by_patient_id
+< from ovseg_zxy.data.Dataset import Dataset
+---
+> from ovseg.data.utils import split_scans_random_uniform, split_scans_by_patient_id
+> from ovseg.data.Dataset import Dataset
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/data/ImageProcessingDataloader.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/data/__init__.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/data/JoinedDataloader.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/data/Dataset.py
+4c4
+< from ovseg_zxy.utils.io import read_data_tpl_from_nii, read_dcms
+---
+> from ovseg.utils.io import read_data_tpl_from_nii, read_dcms
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/data/ReconstructionDataloader.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/data/SegmentationData.py
+1,2c1,2
+< from ovseg_zxy.data.DataBase import DataBase
+< from ovseg_zxy.data.SegmentationDataloader import SegmentationDataloader
+---
+> from ovseg.data.DataBase import DataBase
+> from ovseg.data.SegmentationDataloader import SegmentationDataloader
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/data/utils.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/data/JoinedData.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/data/ReconstructionData.py
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/data/ImageProcessingData.py
+1,2c1,2
+< from ovseg_zxy.data.DataBase import DataBase
+< from ovseg_zxy.data.ImageProcessingDataloader import ImageProcessingDataloader
+---
+> from ovseg.data.DataBase import DataBase
+> from ovseg.data.ImageProcessingDataloader import ImageProcessingDataloader
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/data/SegmentationDataloader.py
+3c3
+< from ovseg_zxy.data.utils import crop_and_pad_image
+---
+> from ovseg.data.utils import crop_and_pad_image
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/data/__pycache__/Dataset.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/data/__pycache__/DataBase.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/data/__pycache__/Dataset.cpython-36.pyc
+diff: models/ovseg_zxy/data/__pycache__/Dataset.cpython-36.pyc: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/data/__pycache__/utils.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/data/__pycache__/SegmentationDataloader.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/data/__pycache__/__init__.cpython-36.pyc
+diff: models/ovseg_zxy/data/__pycache__/__init__.cpython-36.pyc: No such file or directory
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/data/__pycache__/__init__.cpython-37.pyc
+********
+Diff in aiaa_workspace/aiaa-1/lib/ovseg_zxy/data/__pycache__/SegmentationData.cpython-37.pyc
