@@ -18,14 +18,12 @@ class CustomInference(Inference):
         self,
         models,
         path_to_clara_models='/aiaa_workspace/aiaa-1/lib/ovseg_zxy/clara_models',
-        forced_z_spacing=None,
         is_batched_data=False,
         network= None,
         device='cuda'
     ):
         self.models = models
         self.path_to_clara_models = path_to_clara_models
-        self.forced_z_spacing = forced_z_spacing
         
         print('Init: network = %s, device = %s, batched = %s'%(network, device, is_batched_data))
         self.network = None
@@ -66,8 +64,7 @@ class CustomInference(Inference):
         # this part is new and improved
         pred = ClaraWrapperOvarian(data_tpl,
                                    self.models,
-                                   self.path_to_clara_models,
-                                   self.forced_z_spacing)
+                                   self.path_to_clara_models)
         
         print('*** SAVING AND FINISHING INFERENCE ***')
         data.update({output_key: pred})
