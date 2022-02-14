@@ -4,6 +4,7 @@ import torch
 import numpy as np
 import pickle
 import json
+import time
 
 from aiaa.configs.modelconfig import ModelConfig
 from aiaa.inference.inference import Inference
@@ -12,18 +13,21 @@ from aiaa.utils.class_utils import instantiate_class
 from ovseg.model.ClaraWrappers import ClaraWrapperOvarian
 from ovseg_zxy.utils.io import read_nii
 
+# change this path 
+PATH_TO_CLARA_MODELS = '/aiaa_workspace/aiaa-1/lib/ovseg_zxy/clara_models'
+
 class CustomInference(Inference):
 
     def __init__(
         self,
-        models,
-        path_to_clara_models='/aiaa_workspace/aiaa-1/lib/ovseg_zxy/clara_models',
         is_batched_data=False,
         network= None,
         device='cuda'
     ):
-        self.models = models
-        self.path_to_clara_models = path_to_clara_models
+        
+        
+        self._initialize_models()
+        self.path_to_clara_models = PATH_TO_CLARA_MODELS
         
         print('Init: network = %s, device = %s, batched = %s'%(network, device, is_batched_data))
         self.network = None
@@ -61,10 +65,16 @@ class CustomInference(Inference):
         print(data_tpl)
         print(im.shape)
 
+        print('***STARTING NETWORK EXECUTION***')
+
+        st = time.perf_counter()
         # this part is new and improved
         pred = ClaraWrapperOvarian(data_tpl,
                                    self.models,
                                    self.path_to_clara_models)
+        et = time.perf_counter()
+        
+        print(f'Execution done after {et-st:.2f} seconds.')
         
         print('*** SAVING AND FINISHING INFERENCE ***')
         data.update({output_key: pred})
@@ -82,3 +92,38 @@ class CustomInference(Inference):
         if self.model and hasattr(self.model, 'close'):
             self.model.close()
         self.model = None
+    
+    def _initialize_models(self):
+        raise NotImplementedError('Overwrite this method to determine which '
+                                  'regions are segmented')
+
+class CustomInferenceOmentumPelivOvarian(CustomInference):
+    
+    def _initialize_models(self):
+        self.models = ['pod_om']
+        print('Initialized to segment omental (1) and pelvic/ovarian lesions(9)')
+
+class CustomInferenceAbdominalLesions(CustomInference):
+    
+    def _initialize_models(self):
+        self.models = ['abdominal']
+        print('Initialized to segment lesions in the omentum (1), right upper quadrant (2), '
+              'left upper quadrant (3), mesentery (5), left paracolic gutter (6), '
+              'and right paracolic gutter (7).')
+
+class CustomInferenceLymphNodes(CustomInference):
+    
+    def _initialize_models(self):
+        self.models = ['lymph_nodes']
+        print('Initialized to segment lesions in the infrarenal (13), suprerenal (14), '
+              'supradiaphramatic (15), and inguinal lymph nodes (17).')
+
+class CustomInferenceAll(CustomInference):
+    
+    def _initialize_models(self):
+        self.models = ['abdominal', 'pod_om', 'lymph_nodes']
+        print('Initialized to segment lesions in the infrarenal (13), suprerenal (14), '
+              'supradiaphramatic (15), and inguinal lymph nodes (17).')
+
+
+        
